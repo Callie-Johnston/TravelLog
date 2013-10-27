@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Travel Log</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="Ratings">
+        <item >1-star Rating</item>
+        <item >2-star Rating</item>
+        <item >3-star Rating</item>
+        <item >4-star Rating</item>
+        <item >5-star Rating</item>
+    </string-array>
+
+</resources>
