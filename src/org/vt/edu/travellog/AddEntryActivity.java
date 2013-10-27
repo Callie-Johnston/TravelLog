@@ -71,10 +71,12 @@ public class AddEntryActivity extends Activity implements OnItemSelectedListener
 				
 				//Get lat lon from string on GUI
 				String[] splitString = location_.getText().toString().split(",");
-				String passedLat = splitString[0].substring(6);
-				String passedLon = splitString[1].substring(7);
+				if (splitString.length > 1) { 
+					String passedLat = splitString[0].substring(6);
+					String passedLon = splitString[1].substring(7);
 			
-				code.execute(passedLat, passedLon);
+					code.execute(passedLat, passedLon);
+				}
 				
 				//Go to add entry task
 				final AddEntryTask entryTask = new AddEntryTask();
